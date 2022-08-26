@@ -25,6 +25,9 @@
 
         <activity android:name=".activity.RecycleViewActivity"
             android:theme="@style/Theme.AndroidBaisc.NoActionBar"/>
+
+        <activity android:name=".activity.PaintViewActivity"
+            android:theme="@style/Theme.AndroidBaisc.NoActionBar"/>
     </application>
 
 </manifest>

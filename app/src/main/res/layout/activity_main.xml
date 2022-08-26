@@ -34,4 +34,19 @@
         android:background="@android:color/holo_blue_light"
         android:textColor="@android:color/white"/>
 
+    <TextView
+        android:id="@+id/tv_three"
+        app:layout_constraintTop_toBottomOf="@+id/tv_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="PaintView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

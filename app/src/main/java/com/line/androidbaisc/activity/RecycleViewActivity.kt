@@ -85,6 +85,11 @@ class RecycleViewActivity : AppCompatActivity() {
         defaultItemAnimator.addDuration = 1000
         defaultItemAnimator.removeDuration = 1000
         rv_list.itemAnimator = defaultItemAnimator
+
+        val dividerItemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        dividerItemDecoration.setDrawable(getDrawable(R.drawable.divider_decoration_bg)!!)
+//        val myDividerItemDecoration = MyDividerItemDecoration()
+        rv_list.addItemDecoration(dividerItemDecoration)
     }
 
     fun initData(){

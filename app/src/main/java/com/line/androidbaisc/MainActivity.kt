@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.line.androidbaisc.activity.MenuActivity
+import com.line.androidbaisc.activity.PaintViewActivity
 import com.line.androidbaisc.activity.RecycleViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     fun viewClick(){
         tv_one.setOnClickListener(this)
         tv_two.setOnClickListener(this)
+        tv_three.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -35,6 +37,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             }
             R.id.tv_two -> {
                 val intent = Intent(this, MenuActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.tv_three -> {
+                val intent = Intent(this, PaintViewActivity::class.java)
                 startActivity(intent)
             }
         }
